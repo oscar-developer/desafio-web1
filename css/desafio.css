@@ -42,6 +42,13 @@ body{
 	padding-top: 10px;
 }
 
+
+.menu li:first-child:before 
+{
+	width: 0;
+}
+
+
 .menu li:before{
 	content: '';
 	width: 1px;
@@ -107,6 +114,7 @@ body{
 	width: 38px;
 	background-color:#333333;
 	margin-left: 4px;
+	cursor: pointer;
 
 }
 .imagenPrincipal{
@@ -115,6 +123,11 @@ body{
 	background-image: url('http://dob5zu6vfhpfk.cloudfront.net/images/2015/03/13085556/Cusco1.jpg');
 	height: 500px;
 	
+}
+.imagenPrincipal img{
+	border-radius:50%;	
+	height: 30px;
+	width: 30px; 
 }
 .fondoTransparente
 {
@@ -127,7 +140,119 @@ body{
 	background-color:rgba(0,0,0,0.5);
 	
 }
+.ContenedorTituloPrincipal{
+	width: 380px;
+	height:122px;
+	background-color:rgba(222,222,222,0.9);
+	bottom:40px;
+	left: 20px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    color: #666666;
+}
+.PanelTitulo{
+	padding: 15px 15px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.DatosAutor{
+	display: flex;
+    align-items: center;
+}
+.PanelAutor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:10px 10px;
+	border-top: 1px solid #b7b7b7;
+}
+
+
+
+
+
+.PanelContenido{
+	margin-top: 33px;
+}
+
 .imagenMiniatura{
 	height:216px;
 	width:320px;
+	cursor: pointer;
+}
+.TablaImagenes{	
+	border-spacing: 0;
+	color: #515151;
+}
+.TablaImagenes  td{
+	padding: 0;
+}
+.TablaImagenes tr td{
+	
+	border-collapse: collapse;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.TablaImagenes tr td div{
+	width:320px;	
+}
+
+
+.MembreteImagenInferior{
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #b7b7b7; 
+	padding-top: 10px;
+	padding-bottom:30px;
+	align-items: center;
+}
+.EstiloSubTexto{
+	font-size: 11px;
+}
+.DescripcionTextoImagen{
+	font-size: 15px;
+	padding-bottom: 10px;	
+	padding-top: 1px;
+}
+
+.btnPaginacion{
+	text-decoration: none;
+	background-color:#eaeaea;
+	border: 1px solid #cccccc;
+	padding: 5px 13px;
+	font-weight: bold;
+		
+}
+.btnPaginacionIndexado{
+	text-decoration: none;	
+	padding: 5px 13px;
+	font-weight: bold;
+}
+footer{
+	margin-top: 48px;
+	margin-bottom:48px;
+	display: flex;
+    justify-content: center;
+    color: #666666;
+    font-size: 12px;
+
+}
+.PagImgSiguiente:after{
+	content: '>';	
+	line-height: 5px;	
+	color: black;
+	
+	
+}
+.PagImgUltiPag:after{
+	content: '»';	
+	line-height: 20px;	
+	color: black;
+	left: 5px;
+	
 }

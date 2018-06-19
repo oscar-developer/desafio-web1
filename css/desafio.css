@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', helvetica, arial;
+}
+
+.logoPlatzi{
+	
+	margin: 1px 11px;
+	cursor: pointer;
+	
+}
+
+.BarraSuperior{
+	background-color: #273b47;
+	/*height: 55px;*/
+}
+.menu{
+	
+	display: flex;
+	justify-content: center;
+	/*position: absolute;*/
+}
+.menu li{
+	display: inline-flex;
+	text-decoration: none;
+	padding-left: 10px;
+	
+}
+.menu ul{
+	margin: 0;
+}
+.menu li a{
+	padding:8px 5px;
+	text-decoration: none;
+	color: white;
+	border-top: 5px solid transparent;
+	padding-top: 10px;
+}
+
+.menu li:before{
+	content: '';
+	width: 1px;
+	height: 24px;
+	line-height: 20px;	
+	background-color: white;
+	margin-right: 5px;
+	margin-top: 15px;
+}
+.menu li a:hover{
+	cursor: pointer;
+	border-top: 5px solid #7dcd40;
+} 
+
+.cajaHeader{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cajasubMenu{
+	display: flex;
+    align-items: center;
+}
+.button{
+	background-color: #ff4842;
+	text-decoration: none;
+	color: white;
+	border-radius: 4px;
+	padding: 5px 8px;
+	border-bottom: 5px solid #d0272a;
+	margin: 9px 10px 9px 27px;	
+}
